@@ -3,6 +3,8 @@ import torch
 class TrainConfig:
     checkpoint="EleutherAI/gpt-neo-125m"  # paste a checkpoint
     device='cuda' if torch.cuda.is_available() else 'cpu'
+    train_batch_size_lightning=1
+    eval_bathc_size_lightning=1
     
     general_training_args={'output_dir':'./',
                         'overwrite_output_dir':True, 

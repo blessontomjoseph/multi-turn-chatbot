@@ -88,7 +88,8 @@ To use the chatbot system, follow these steps:
 
 ## Reads
 
-1. tokenization for chat bot and contextual inference :  https://itnext.io/building-a-multi-turn-chatbot-with-gpt-and-sagemaker-a-step-by-step-guide-7d75f33ccea1
+1. tokenization for chat bot and contextual inference: 
+    - https://itnext.io/building-a-multi-turn-chatbot-with-gpt-and-sagemaker-a-step-by-step-guide-7d75f33ccea1
  
 2. QLoRa: 
     - https://arxiv.org/abs/2305.14314

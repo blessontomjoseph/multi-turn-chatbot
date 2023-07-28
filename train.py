@@ -6,13 +6,15 @@ import preprocess_daily_dialog
 import metrics
 import os
 import pandas as pd
+from transformers import AutoModelForCausalLM,AutoTokenizer
 
 hf_user="" #specify hf username for model to be downloaded fr inference or evaluation
 hub_repository="" #specify a  hf hub repository name for the model to be uploaded after training
 
 if __name__=="__main__":
     
-    model,tokenizer=utils.model_tokenizer(TrainConfig.checkpoint,TrainConfig.device)
+    model=AutoModelForCausalLM.from_prettrained(TrainConfig.checkpoint).to(TrainConfig.device)
+    tokenizer=AutoTokenizer.from_pretrained("tokenizer/gpt_neo_125_tokenizer")
     collator_with_padding=DataCollatorWithPadding(tokenizer=tokenizer)
     dialog=load_dataset('daily_dialog') # loads the  unprocessed data (open it from a file system or load it from hf datasets)
     
