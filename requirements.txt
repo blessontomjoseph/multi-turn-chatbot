@@ -7,3 +7,5 @@ pandas==1.3.3
 tqdm==4.62.0
 numpy==1.21.2
 re==2.2.1
+rouge_score
+sacrebleu

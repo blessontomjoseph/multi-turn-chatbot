@@ -62,7 +62,7 @@ By default, the codebase does not utilize parallel processing. However, if you h
 
 ## Training and Inference
 
-The training process involves pre-processing the datasets using the tokenizer associated to the LLM and fine-tuning the selected LLM on the multiturn chatbot task. After training, the model is checkpointed into Hugging Face Hub for easy access and sharing.
+The training process involves pre-processing the datasets using the tokenizer associated to the LLM and fine-tuning the selected LLM on the multiturn chatbot task. After training, the model is checkpointed into Hugging Face Hub for easy access and sharing. [Trained model checkpoint](https://huggingface.co/theothertom/gpt_neo_extended_retrain/tree/main)
 
 During inference, the chatbot takes a certain amount of conversation history as input to maintain context for a limited number of chat turns. This ensures that the chatbot provides more relevant and coherent responses.
 
